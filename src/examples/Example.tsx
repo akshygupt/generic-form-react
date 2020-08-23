@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Form, FormTextInput, FormErrorMessage } from "../form";
-import { FormValues } from "../form/Form";
+import { FormValues, FormErrorsValues } from "../form/Form";
 import "../form/form.css";
 import "./example.css";
 
@@ -24,7 +24,7 @@ const Example: React.SFC<ExampleProps> = (props) => {
         }}
         className="form"
         validate={(values) => {
-          const errors: any = {};
+          const errors: FormErrorsValues = {};
           if (!values.firstName) {
             errors.firstName = "Required";
           }
@@ -72,7 +72,6 @@ const Example: React.SFC<ExampleProps> = (props) => {
             name="email"
             placeholder="abc@example.com"
             className="field"
-            type="email"
           />
           <FormErrorMessage name="email" />
         </div>

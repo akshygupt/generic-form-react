@@ -6,7 +6,6 @@ export interface FormTextInputProps {
   name: string;
   id?: string;
   placeholder?: string;
-  type?: string;
   validate?: (values: any) => void | string;
   className?: string;
 }
