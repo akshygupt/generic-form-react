@@ -1,0 +1,31 @@
+.app {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.field-group {
+    display: grid;
+    margin-bottom: 12px;
+}
+
+.field {
+    margin-top: 6px;
+    height: 24px;
+    padding: 2px;
+}
+
+.label{
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.submit-button {
+    margin-top: 12px;
+    padding: 12px;
+}
